@@ -1,15 +1,13 @@
 ---
-theme: seriph
+theme: vuetiful
 title: "Vue.js 3 – Ein modernes Frontend-Framework"
 transition: slide-left
 comark: true
 drawings:
   persist: false
-themeConfig:
-  primary: '#42b883'
 ---
 
-# Vue.js 3
+# Vue.js
 
 **Ein modernes Frontend-Framework**
 
