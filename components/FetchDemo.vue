@@ -1,32 +1,31 @@
 <script setup>
 import { ref } from 'vue'
 
-// Inline-Composable – gleiche Logik wie useFetch.js, hier eingebettet
 function useFetch(url) {
-  const daten = ref(null)
-  const laedt = ref(false)
-  const fehler = ref(null)
+  const data = ref(null)
+  const loading = ref(false)
+  const error = ref(null)
 
-  async function abrufen() {
-    laedt.value = true
-    fehler.value = null
-    daten.value = null
+  async function load() {
+    loading.value = true
+    error.value = null
+    data.value = null
     try {
-      const antwort = await fetch(url)
-      if (!antwort.ok) throw new Error(`HTTP ${antwort.status}`)
-      daten.value = await antwort.json()
+      const response = await fetch(url)
+      if (!response.ok) throw new Error(`HTTP ${response.status}`)
+      data.value = await response.json()
     } catch (e) {
-      fehler.value = e.message
+      error.value = e.message
     } finally {
-      laedt.value = false
+      loading.value = false
     }
   }
 
-  abrufen() // Automatisch beim Einbinden ausführen
-  return { daten, laedt, fehler, erneut: abrufen }
+  load()
+  return { data, loading, error, reload: load }
 }
 
-const { daten, laedt, fehler, erneut } = useFetch(
+const { data, loading, error, reload } = useFetch(
   'https://jsonplaceholder.typicode.com/todos/1'
 )
 </script>
@@ -35,19 +34,19 @@ const { daten, laedt, fehler, erneut } = useFetch(
   <div class="container">
     <div class="url-label">GET /todos/1</div>
 
-    <div v-if="laedt" class="status loading">Lädt...</div>
-    <div v-else-if="fehler" class="status error">Fehler: {{ fehler }}</div>
-    <div v-else-if="daten">
-      <div class="resp-label">Antwort:</div>
-      <pre class="json">{{ JSON.stringify(daten, null, 2) }}</pre>
+    <div v-if="loading" class="status loading">Loading...</div>
+    <div v-else-if="error" class="status error">Error: {{ error }}</div>
+    <div v-else-if="data">
+      <div class="resp-label">Response:</div>
+      <pre class="json">{{ JSON.stringify(data, null, 2) }}</pre>
     </div>
 
     <button
-      @click="erneut"
-      :disabled="laedt"
+      @click="reload"
+      :disabled="loading"
       class="btn"
     >
-      {{ laedt ? 'Lädt...' : 'Erneut laden' }}
+      {{ loading ? 'Loading...' : 'Reload' }}
     </button>
   </div>
 </template>

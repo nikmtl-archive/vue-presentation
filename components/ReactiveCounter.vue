@@ -2,24 +2,24 @@
 import { ref, computed } from 'vue'
 
 const count = ref(0)
-const multiplikator = ref(2)
+const multiplier = ref(2)
 
-// Wird automatisch neu berechnet, wenn count oder multiplikator sich ändern
-const ergebnis = computed(() => count.value * multiplikator.value)
+// Automatically recalculated when count or multiplier change
+const result = computed(() => count.value * multiplier.value)
 </script>
 
 <template>
   <div class="container">
     <div class="row">
       <button @click="count++" class="btn">+1</button>
-      <span class="counter-val">Zähler: {{ count }}</span>
+      <span class="counter-val">Counter: {{ count }}</span>
       <button @click="count--" class="btn btn-outline">−1</button>
     </div>
 
     <div class="row">
-      <label class="label">Multiplikator:</label>
+      <label class="label">Multiplier:</label>
       <input
-        v-model.number="multiplikator"
+        v-model.number="multiplier"
         type="number"
         min="1"
         max="20"
@@ -28,11 +28,11 @@ const ergebnis = computed(() => count.value * multiplikator.value)
     </div>
 
     <div class="result">
-      <span class="formula">{{ count }} × {{ multiplikator }} =</span>
-      <span class="answer">{{ ergebnis }}</span>
+      <span class="formula">{{ count }} × {{ multiplier }} =</span>
+      <span class="answer">{{ result }}</span>
     </div>
 
-    <div class="hint">computed() – automatisch aktualisiert</div>
+    <div class="hint">computed() – auto-updated</div>
   </div>
 </template>
 

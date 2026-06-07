@@ -1,0 +1,11 @@
+:root {
+  --slidev-theme-primary: #42b883;
+}
+
+.slidev-layout.intro h1 {
+  color: #34495e;
+}
+
+.slidev-layout h3 {
+  color: #42b883;
+}

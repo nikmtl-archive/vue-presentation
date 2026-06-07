@@ -1,47 +1,47 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-const suche = ref('')
+const query = ref('')
 
-const konzepte = [
-  'Reaktivität', 'Composables', 'Direktiven',
+const concepts = [
+  'Reactivity', 'Composables', 'Directives',
   'Vue Router', 'Pinia', 'Teleport',
 ]
 
-// Computed-Property filtert automatisch bei jeder Eingabe
-const gefilterteKonzepte = computed(() =>
-  konzepte.filter(k =>
-    k.toLowerCase().includes(suche.value.toLowerCase())
+// Computed property filters automatically on every input
+const filtered = computed(() =>
+  concepts.filter(k =>
+    k.toLowerCase().includes(query.value.toLowerCase())
   )
 )
 </script>
 
 <template>
   <div class="container">
-    <!-- v-model: bidirektionale Bindung an suche -->
+    <!-- v-model: two-way binding to query -->
     <input
-      v-model="suche"
-      placeholder="Konzept suchen..."
+      v-model="query"
+      placeholder="Search concept..."
       class="search-input"
     />
 
     <div class="count">
-      {{ gefilterteKonzepte.length }} / {{ konzepte.length }} Einträge
+      {{ filtered.length }} / {{ concepts.length }} entries
     </div>
 
-    <!-- v-for: rendert gefilterte Liste reaktiv -->
+    <!-- v-for: renders filtered list reactively -->
     <ul class="list">
       <li
-        v-for="konzept in gefilterteKonzepte"
-        :key="konzept"
+        v-for="concept in filtered"
+        :key="concept"
         class="list-item"
       >
-        {{ konzept }}
+        {{ concept }}
       </li>
     </ul>
 
-    <div v-if="gefilterteKonzepte.length === 0" class="empty">
-      Keine Treffer
+    <div v-if="filtered.length === 0" class="empty">
+      No results
     </div>
   </div>
 </template>
@@ -54,6 +54,7 @@ const gefilterteKonzepte = computed(() =>
   font-family: sans-serif;
   max-width: 220px;
   background: white;
+  width: auto;
 }
 .search-input {
   width: 100%;

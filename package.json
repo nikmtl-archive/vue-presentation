@@ -8,7 +8,9 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@iconify-json/lucide": "^1.2.111",
     "@slidev/cli": "^52.16.0",
+    "@slidev/theme-apple-basic": "^0.25.1",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "slidev-theme-vuetiful": "^0.3.1",

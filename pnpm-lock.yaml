@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@iconify-json/lucide':
+        specifier: ^1.2.111
+        version: 1.2.111
       '@slidev/cli':
         specifier: ^52.16.0
         version: 52.16.0(@nuxt/kit@3.21.7)(@types/markdown-it@14.1.2)(@types/node@22.19.19)(@vue/compiler-sfc@3.5.35)(lightningcss@1.32.0)(markdown-it@14.2.0)(postcss@8.5.15)(rolldown@1.0.3)
+      '@slidev/theme-apple-basic':
+        specifier: ^0.25.1
+        version: 0.25.1
       '@slidev/theme-default':
         specifier: latest
         version: 0.25.0
@@ -221,6 +227,9 @@ packages:
 
   '@iconify-json/carbon@1.2.23':
     resolution: {integrity: sha512-7apXetbRmEiWDXIQyikFJZyq7pCVBKHYRzmeLdtT7wWoHYdWHwnFcBAzpuLoSh+ZEAfXZapSWEe8iuS6dUqf+Q==}
+
+  '@iconify-json/lucide@1.2.111':
+    resolution: {integrity: sha512-S6oXom2YOKuXFxWofhHa2oq++Z3WeZ78dRFDA7aEEJqyNCJlQd1UGAfN8u2gD2NzvYotmm+j5kH678viWfZbGQ==}
 
   '@iconify-json/ph@1.2.2':
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
@@ -894,6 +903,10 @@ packages:
 
   '@slidev/rough-notation@0.1.0':
     resolution: {integrity: sha512-a/CbVmjuoO3E4JbUr2HOTsXndbcrdLWOM+ajbSQIY3gmLFzhjeXHGksGcp1NZ08pJjLZyTCxfz1C7v/ltJqycA==}
+
+  '@slidev/theme-apple-basic@0.25.1':
+    resolution: {integrity: sha512-saA5yYui+jTT13tP+QJKnWeM8sK0IA1iln2E3sWAJsfKdQHUD3fw8+AlUHLUH6yc8NPq3ewtZcwWx49a/iF8Tg==}
+    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
 
   '@slidev/theme-default@0.25.0':
     resolution: {integrity: sha512-iWvthH1Ny+i6gTwRnEeeU+EiqsHC56UdEO45bqLSNmymRAOWkKUJ/M0o7iahLzHSXsiPu71B7C715WxqjXk2hw==}
@@ -3376,6 +3389,10 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
+  '@iconify-json/lucide@1.2.111':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/ph@1.2.2':
     dependencies:
       '@iconify/types': 2.0.0
@@ -4039,6 +4056,12 @@ snapshots:
   '@slidev/rough-notation@0.1.0':
     dependencies:
       roughjs: 4.6.6
+
+  '@slidev/theme-apple-basic@0.25.1':
+    dependencies:
+      '@slidev/types': 0.47.5
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.5
 
   '@slidev/theme-default@0.25.0':
     dependencies:

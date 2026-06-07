@@ -43,6 +43,8 @@ This is a [Slidev](https://sli.dev) presentation project — Markdown-driven sli
 
 **Code snippet imports:** Use `<<< @/snippets/file.ts` to embed file content. Named regions (`#region snippet` / `#endregion snippet`) let you import just a portion.
 
+**Icons:** Use Lucide icons via `@iconify-json/lucide` (already installed). Syntax: `<lucide-icon-name class="..." />`. Browse icons at https://lucide.dev/icons/. For other icon sets, install `@iconify-json/[collection]` and use `<collection-icon-name />`.
+
 **Deployment:** Configured for both Netlify (`netlify.toml`) and Vercel (`vercel.json`).
 
 ## Slidev Skill
