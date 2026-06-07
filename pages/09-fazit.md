@@ -5,36 +5,51 @@ class: text-center
 
 # Fazit & Einsatzempfehlung
 
-<div class="text-xl mt-4 mb-8">
-  Vue.js 3 ist eine <span class="text-[#42b883] font-bold">ausgezeichnete Wahl</span> für:
+<div class="grid grid-cols-2 gap-8 text-left max-w-4xl mx-auto mt-6">
+
+<div>
+<div class="text-base font-semibold text-[#42b883] mb-3">Vue.js 3 eignet sich für …</div>
+
+<div v-click class="p-3 rounded bg-gray-100 dark:bg-gray-800 mb-2">
+  <div class="font-bold text-sm mb-1">Einsteiger</div>
+  <div class="text-xs text-gray-600 dark:text-gray-400">Options API bietet einen klaren Einstiegspunkt. Exzellente Doku, flache Lernkurve, überschaubares Ökosystem.</div>
 </div>
 
-<div class="grid grid-cols-3 gap-4 text-left max-w-3xl mx-auto">
-
-<div v-click class="p-4 rounded border-2 border-[#42b883] bg-green-50">
-  <div class="font-bold mb-2 text-[#42b883]">Einsteiger</div>
-  <div class="text-sm text-gray-600">Options API bietet einen klaren Einstiegspunkt. Exzellente Doku, flache Lernkurve, überschaubares Ökosystem.</div>
+<div v-click class="p-3 rounded bg-gray-100 dark:bg-gray-800 mb-2">
+  <div class="font-bold text-sm mb-1">Mittelgroße Apps</div>
+  <div class="text-xs text-gray-600 dark:text-gray-400">Composition API + Pinia skalieren gut. Kein unnötiges Boilerplate, TypeScript-Unterstützung inklusive.</div>
 </div>
 
-<div v-click class="p-4 rounded border-2 border-[#42b883] bg-green-50">
-  <div class="font-bold mb-2 text-[#42b883]">Mittelgroße Apps</div>
-  <div class="text-sm text-gray-600">Composition API + Pinia skalieren gut. Kein unnötiges Boilerplate, TypeScript-Unterstützung inklusive.</div>
+<div v-click class="p-3 rounded bg-gray-100 dark:bg-gray-800">
+  <div class="font-bold text-sm mb-1">Schnelle Projekte</div>
+  <div class="text-xs text-gray-600 dark:text-gray-400">Vite + Vue = sofortige Produktivität. Ideal für Prototypen, Semesterprojekte und interaktive Demos.</div>
+</div>
 </div>
 
-<div v-click class="p-4 rounded border-2 border-[#42b883] bg-green-50">
-  <div class="font-bold mb-2 text-[#42b883]">Schnelle Projekte</div>
-  <div class="text-sm text-gray-600">Vite + Vue = sofortige Produktivität. Ideal für Prototypen, Semesterprojekte und interaktive Demos.</div>
+<div>
+<div class="text-base font-semibold text-red-500 mb-3">… und weniger geeignet, wenn:</div>
+
+<div v-click class="p-3 rounded bg-gray-100 dark:bg-gray-800 mb-2">
+  <div class="font-bold text-sm mb-1">Bestehendes React- / Angular-Team</div>
+  <div class="text-xs text-gray-600 dark:text-gray-400">Migration kostet Zeit und Wissen. Der Ökosystem-Lock-in (Bibliotheken, Tooling, Know-how) überwiegt meist den technischen Vorteil.</div>
 </div>
 
+<div v-click class="p-3 rounded bg-gray-100 dark:bg-gray-800 mb-2">
+  <div class="font-bold text-sm mb-1">Sehr große Enterprise-Codebases</div>
+  <div class="text-xs text-gray-600 dark:text-gray-400">React hat ein tieferes Angebot an Enterprise-Tooling, getesteten Patterns und Community-Größe für komplexe Monorepos.</div>
 </div>
 
-<div v-click class="mt-8 text-sm text-gray-400">
-  Für Enterprise-Umgebungen mit bestehendem React- oder Angular-Team: andere Wahl sorgfältig abwägen.
+<div v-click class="p-3 rounded bg-gray-100 dark:bg-gray-800">
+  <div class="font-bold text-sm mb-1">Native Mobile Apps</div>
+  <div class="text-xs text-gray-600 dark:text-gray-400">React Native ist deutlich ausgereifter als NativeScript-Vue. Für echte iOS/Android-Apps klar die bessere Wahl.</div>
+</div>
+</div>
+
 </div>
 
 <!--
 Kurz: Wenn ihr neu anfangt und flexibel seid, ist Vue ein sehr angenehmes Framework zum Lernen und Entwickeln.
-Wenn ihr in ein bestehendes React-Team kommt, lohnt sich Vue-Wissen trotzdem – die Konzepte sind nahezu identisch.
+Die Gegenseite ist ehrlich gemeint – Vue ist nicht immer die beste Wahl, und das sollte man wissen.
 -->
 
 ---
