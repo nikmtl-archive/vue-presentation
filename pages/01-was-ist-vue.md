@@ -38,6 +38,8 @@ Hauptkonzept von Vue.js: Wiederverwendbare, gekapselte Bausteine mit eigenem Tem
 
 Click 1: Subtitle – progressives Framework
 Click 2: 3 Spalten – Progressiv / Deklarativ / Komponentenbasiert
+
+Dominik
 -->
 
 ---
@@ -67,4 +69,6 @@ Entstehung und Historischer Überblick  &nbsp;·&nbsp; Kurz
 <!--
 Evan You arbeitete bei Google mit AngularJS und wollte nur die "guten Teile" davon extrahieren.
 Vue 3 ist der aktuelle Standard und der Fokus dieser Präsentation.
+
+Dominik
 -->

@@ -20,6 +20,8 @@ Wir schauen uns an:
 - Was ist Vue
 - Wie Funktioniert
 - Wann richtige Wahl
+
+Dominik
 -->
 
 ---
