@@ -21,11 +21,10 @@ function useFetch(url) {
     }
   }
 
-  load()
-  return { data, loading, error, reload: load }
+  return { data, loading, error, load }
 }
 
-const { data, loading, error, reload } = useFetch(
+const { data, loading, error, load } = useFetch(
   'https://jsonplaceholder.typicode.com/todos/1'
 )
 </script>
@@ -42,11 +41,11 @@ const { data, loading, error, reload } = useFetch(
     </div>
 
     <button
-      @click="reload"
+      @click="load"
       :disabled="loading"
       class="btn"
     >
-      {{ loading ? 'Loading...' : 'Reload' }}
+      {{ loading ? 'Loading...' : data ? 'Reload' : 'Laden' }}
     </button>
   </div>
 </template>

@@ -82,15 +82,15 @@ import { ref } from 'vue'
 export function useFetch(url) {
   const data = ref(null)
   const error = ref(null)
-  const loading = ref(true)
+  const loading = ref(false)
 
-  fetch(url)
-    .then(r => r.json())
-    .then(json => { data.value = json })
-    .catch(err => { error.value = err })
-    .finally(() => { loading.value = false })
+  async function load() {
+    loading.value = true
+    data.value = await fetch(url).then(r => r.json())
+    loading.value = false
+  }
 
-  return { data, error, loading }
+  return { data, error, loading, load }
 }
 ```
 
@@ -99,7 +99,7 @@ export function useFetch(url) {
 <script setup>
 import { useFetch } from './useFetch'
 
-const { data, error, loading } = useFetch('/api/users')
+const { data, error, loading, load } = useFetch('/api/users')
 </script>
 ```
 
@@ -125,19 +125,17 @@ zoom: 0.85
 <script setup>
 import { useFetch } from './composables/useFetch'
 
-// One line – all reactive states bundled
 const {
   data,
   loading,
   error,
-  reload,
+  load,
 } = useFetch(
   'https://jsonplaceholder.typicode.com/todos/1'
 )
 </script>
 
 <template>
-  <!-- v-if / v-else-if: state control -->
   <div v-if="loading">Loading...</div>
   <pre v-else-if="data">
     {{ JSON.stringify(data, null, 2) }}
@@ -145,7 +143,9 @@ const {
   <div v-else-if="error">
     Error: {{ error }}
   </div>
-  <button @click="reload">Reload</button>
+  <button @click="load">
+    {{ data ? 'Reload' : 'Laden' }}
+  </button>
 </template>
 ```
 
