@@ -63,6 +63,11 @@ Kernkonzept von Vue
   <p> Gleiche Eingaben erzeugen immer dieselbe Ausgabe → deklaratives Paradigma </p>
 </div>
 
+<!--
+
+Michelle
+-->
+
 ---
 zoom: 0.85
 ---
@@ -127,3 +132,8 @@ const count = ref(0)
 
 </div>
 </div>
+
+<!--
+
+Michelle
+-->

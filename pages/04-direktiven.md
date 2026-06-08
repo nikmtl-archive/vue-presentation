@@ -61,4 +61,6 @@ const filtered = computed(() =>
 v-bind und v-on haben Kurzformen: : und @
 v-model bei React würde onChange + value separat erfordern – Vue macht das automatisch.
 Die LiveFilter-Komponente demonstriert v-model, computed und v-for zusammen in Aktion.
+
+Michelle
 -->

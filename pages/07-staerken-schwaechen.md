@@ -1,5 +1,7 @@
 # Stärken & Schwächen
 
+<!-- TODO Reihenfolge anpassen-->
+
 <div class="grid grid-cols-2 gap-6 mt-4">
 
 <div>
@@ -115,4 +117,6 @@
 <!--
 Ehrliche Einschätzung: Vue ist technisch exzellent, kämpft aber mit der Wahrnehmung als "kleines Framework".
 In der asiatischen Region – v.a. China – ist Vue sehr stark verbreitet.
+
+Dominik
 -->

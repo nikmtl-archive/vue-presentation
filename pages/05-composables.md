@@ -3,7 +3,7 @@ zoom: 0.85
 ---
 
 # Composables – das useXxx-Pattern
-
+<!-- TODO: Text anpassen -->
 <v-clicks>
 
 Composables kapseln und **teilen** reaktive Logik zwischen beliebig vielen Komponenten
@@ -65,6 +65,8 @@ const { data, error, loading } = useFetch('/api/users')
 <!--
 Composables folgen der React-Hooks-Logik konzeptuell, sind aber nicht an Rendering-Zyklen gebunden.
 Man kann Composables in anderen Composables nutzen – echte Komposierbarkeit.
+
+Dominik
 -->
 
 ---
@@ -118,4 +120,6 @@ const {
 <!--
 Das ist der Kern des Composable-Patterns: die gesamte Fetch-Logik ist in einer Funktion.
 Die Komponente ist schlank und deklarativ – dieselbe useFetch-Funktion läuft in beliebig vielen Komponenten.
+
+Dominik
 -->

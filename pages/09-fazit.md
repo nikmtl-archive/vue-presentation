@@ -3,12 +3,13 @@ layout: center
 class: text-center
 ---
 
+<!-- TODO: Texte anpassen -->
 # Fazit & Einsatzempfehlung
 
 <div class="grid grid-cols-2 gap-8 text-left max-w-4xl mx-auto mt-6">
 
 <div>
-<div class="text-base font-semibold text-[#42b883] mb-3">Vue.js 3 eignet sich für …</div>
+<div class="text-base font-semibold text-[#42b883] mb-3">Vue geeignet für:</div>
 
 <div v-click class="p-3 rounded bg-gray-100 dark:bg-gray-800 mb-2">
   <div class="font-bold text-sm mb-1">Einsteiger</div>
@@ -27,7 +28,7 @@ class: text-center
 </div>
 
 <div>
-<div class="text-base font-semibold text-red-500 mb-3">… und weniger geeignet, wenn:</div>
+<div class="text-base font-semibold text-red-500 mb-3">Weniger geeignet für:</div>
 
 <div v-click class="p-3 rounded bg-gray-100 dark:bg-gray-800 mb-2">
   <div class="font-bold text-sm mb-1">Bestehendes React- / Angular-Team</div>
@@ -50,6 +51,8 @@ class: text-center
 <!--
 Kurz: Wenn ihr neu anfangt und flexibel seid, ist Vue ein sehr angenehmes Framework zum Lernen und Entwickeln.
 Die Gegenseite ist ehrlich gemeint – Vue ist nicht immer die beste Wahl, und das sollte man wissen.
+
+Michelle
 -->
 
 ---
@@ -94,4 +97,6 @@ npm create vue@latest
 <!--
 vuejs.org hat eine der besten Dokumentationen im Frontend-Ökosystem.
 Der interaktive Tutorial auf vuejs.org/tutorial ist besonders empfehlenswert zum Einstieg.
+
+Michelle
 -->

@@ -32,6 +32,8 @@ Was macht Vue im Hintergrund?
 <!--
 Das Reactivity System basiert in Vue 3 auf ES Proxies – anders als in Vue 2 (Object.defineProperty).
 Das erlaubt reaktives Tracking für Arrays, Maps und dynamisch hinzugefügte Properties.
+
+Dominik
 -->
 
 ---
@@ -80,3 +82,8 @@ const emit = defineEmits(['update:name'])
 
 </div>
 </div>
+
+<!--
+
+Dominik
+-->

@@ -1,5 +1,5 @@
 # Das Vue-Ökosystem
-
+<!-- TODO komischer abstand zwichen titel und text-->
 <div class="grid grid-cols-3 gap-6 mt-28">
 
   <v-click>
@@ -31,6 +31,8 @@
 <!--
 Der gesamte Stack – Vite + Vue + Pinia + Router – ist aufeinander abgestimmt und hochoptimiert.
 Für neue Projekte: `npm create vue@latest` richtet alles automatisch ein.
+
+Michelle
 -->
 
 ---
@@ -100,6 +102,8 @@ export const useCounterStore = defineStore('counter', () => {
 Pinia ist der offizielle Nachfolger von Vuex.
 Kein mutations-Konzept mehr – direkte State-Mutationen in actions.
 TypeScript-Unterstützung out of the box, volle DevTools-Integration.
+
+Michelle
 -->
 
 
@@ -168,4 +172,6 @@ const routes = [
 <!--
 Vue Router ist der offizielle Router für Vue.js.
 Navigation per <RouterLink> im Template, programmatisch mit useRouter().push().
+
+Michelle
 -->
