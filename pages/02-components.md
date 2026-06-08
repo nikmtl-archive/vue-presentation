@@ -68,7 +68,7 @@ zoom: 0.85
 ---
 
 # SFC – Erstes Beispiel
-Single File Component – alles in einer Datei: Template, Script, Style
+Single File Component  &nbsp;·&nbsp;  Template, Logik und Styles in einer Datei
 
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
@@ -89,7 +89,7 @@ const name = ref('World')
 const count = ref(0)
 </script>
 
-<style scoped>
+<style scoped> /* simplified */
 .card {
   padding: 1rem;
   border: 1px solid #42b883;

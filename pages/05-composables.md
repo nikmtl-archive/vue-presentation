@@ -4,12 +4,20 @@ zoom: 0.85
 
 # Composables – das useXxx-Pattern
 
+<v-clicks>
+
 Composables kapseln und **teilen** reaktive Logik zwischen beliebig vielen Komponenten
+
+</v-clicks>
 
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
 
+<v-clicks>
+
 **Warum Composables?**
+
+</v-clicks>
 
 <v-clicks>
 
@@ -21,7 +29,7 @@ Composables kapseln und **teilen** reaktive Logik zwischen beliebig vielen Kompo
 </v-clicks>
 
 </div>
-<div>
+<div v-click="1">
 
 ```js 
 // composables/useFetch.js

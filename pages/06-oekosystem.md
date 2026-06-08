@@ -1,6 +1,6 @@
 # Das Vue-Ökosystem
 
-<div class="grid grid-cols-2 gap-6 mt-8">
+<div class="grid grid-cols-3 gap-6 mt-28">
 
   <v-click>
   <div class="flex flex-col items-center text-center">
@@ -23,14 +23,6 @@
     <lucide-route class="text-4xl mb-2 text-[#42b883]" />
     <p class="font-bold text-[#2d8a63] tracking-wide uppercase text-sm mt-2">Vue Router</p>
     <p class="text-xs text-gray-500 mt-1">Client-side Routing. Verschachtelte Routen, Navigation Guards, Lazy Loading und HTML5-History-Modus.</p>
-  </div>
-  </v-click>
-
-  <v-click>
-  <div class="flex flex-col items-center text-center">
-    <lucide-wrench class="text-4xl mb-2 text-[#42b883]" />
-    <p class="font-bold text-[#2d8a63] tracking-wide uppercase text-sm mt-2">Vue DevTools</p>
-    <p class="text-xs text-gray-500 mt-1">Browser-Extension. Komponentenbaum, reaktive Zustände, Events und Performance-Profile in Echtzeit.</p>
   </div>
   </v-click>
 
@@ -70,8 +62,8 @@ const routes = [
 <div class="flex flex-col gap-4 mt-2">
 
 <v-click>
-<div class="flex items-start gap-3">
-  <lucide-route class="text-2xl text-[#42b883] mt-0.5 shrink-0" />
+<div class="flex items-center gap-3">
+  <lucide-route class="text-2xl text-[#42b883] shrink-0" />
   <div>
     <p class="font-bold text-sm text-[#2d8a63]">Dynamische Segmente</p>
     <p class="text-xs text-gray-500"><code>:id</code> im Pfad – per <code>useRoute().params.id</code> abrufbar</p>
@@ -80,8 +72,8 @@ const routes = [
 </v-click>
 
 <v-click>
-<div class="flex items-start gap-3">
-  <lucide-shield class="text-2xl text-[#42b883] mt-0.5 shrink-0" />
+<div class="flex items-center gap-3">
+  <lucide-shield class="text-2xl text-[#42b883] shrink-0" />
   <div>
     <p class="font-bold text-sm text-[#2d8a63]">Navigation Guards</p>
     <p class="text-xs text-gray-500"><code>beforeEach</code> – Auth-Checks vor jedem Routenwechsel</p>
@@ -90,8 +82,8 @@ const routes = [
 </v-click>
 
 <v-click>
-<div class="flex items-start gap-3">
-  <lucide-package class="text-2xl text-[#42b883] mt-0.5 shrink-0" />
+<div class="flex items-center gap-3">
+  <lucide-package class="text-2xl text-[#42b883] shrink-0" />
   <div>
     <p class="font-bold text-sm text-[#2d8a63]">Lazy Loading</p>
     <p class="text-xs text-gray-500"><code>() => import('./Page.vue')</code> – Komponente wird erst bei Bedarf geladen</p>

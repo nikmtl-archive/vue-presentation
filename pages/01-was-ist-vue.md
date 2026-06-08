@@ -44,7 +44,7 @@ Click 2: 3 Spalten – Progressiv / Deklarativ / Komponentenbasiert
 
 # Was ist Vue.js
 
-Kurz: Entstehung und Historischer Überblick 
+Entstehung und Historischer Überblick  &nbsp;·&nbsp; Kurz
 
 <div class="flex flex-col mt-15 items-center">
 
