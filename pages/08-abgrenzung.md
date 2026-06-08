@@ -20,7 +20,7 @@ class: text-sm
 
 <v-click>
 
-**Kernunterschied**: Vue und Angular setzen auf deklarative Templates, React auf imperatives JSX. Svelte kompiliert zu Vanilla JS, während die anderen einen Virtual DOM nutzen.
+**Kernunterschied**: Vue und Angular setzen auf deklarative Templates, React auf imperatives JSX. Svelte kompiliert zu Vanilla JS ohne Runtime – Vue, React und Angular nutzen dagegen einen Virtual DOM.
 
 </v-click>
 
