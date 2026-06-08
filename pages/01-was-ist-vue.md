@@ -17,7 +17,7 @@
   <div class="flex flex-col items-center text-center">
     <lucide-code-2 class="text-4xl mb-2 text-[#42b883]" />
     <p class="font-bold text-[#2d8a63] tracking-wide uppercase text-sm mt-2">Deklarativ</p>
-    <p class="text-sm text-gray-500 mt-1">Beschreiben des gewünschten Zustands → <br /> Vue kümmert sich ums DOM</p>
+    <p class="text-sm text-gray-500 mt-1">State beschreiben <br /> → Vue kümmert sich ums DOM</p>
   </div>
   </v-click>
 
@@ -32,12 +32,7 @@
 
 
 <!--
-Die UI ist eine Funktion des Zustands – kein manuelles DOM-Manipulieren, nur State beschreiben.
-Hauptkonzept von Vue.js: Wiederverwendbare, gekapselte Bausteine mit eigenem Template, Logik und Style.
 
-
-Click 1: Subtitle – progressives Framework
-Click 2: 3 Spalten – Progressiv / Deklarativ / Komponentenbasiert
 
 Dominik
 -->
@@ -46,7 +41,7 @@ Dominik
 
 # Was ist Vue.js
 
-Entstehung und Historischer Überblick  &nbsp;·&nbsp; Kurz
+Entstehung und Historischer Überblick  &nbsp;·&nbsp; Kurzfassung
 
 <div class="flex flex-col mt-15 items-center">
 
@@ -61,14 +56,14 @@ Entstehung und Historischer Überblick  &nbsp;·&nbsp; Kurz
 </div>
 
 <div class="mt-4 text-sm text-gray-500 text-center">
-  Aktuell ist Vue 3 der Standard – wir konzentrieren uns heute auf die neuen Features und Best Practices von Vue 3.
+  Aktuell ist Vue 3 der Standard →  wir konzentrieren uns heute auf die neuen Features und Best Practices von Vue 3
 </div>
 
 </div>
 
 <!--
-Evan You arbeitete bei Google mit AngularJS und wollte nur die "guten Teile" davon extrahieren.
-Vue 3 ist der aktuelle Standard und der Fokus dieser Präsentation.
+Evan You (Google) wollte beste sachen von AngularJS extrahieren.
+
 
 Dominik
 -->

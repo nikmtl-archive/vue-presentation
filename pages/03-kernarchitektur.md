@@ -7,7 +7,7 @@ Was macht Vue im Hintergrund?
   <div class="flex flex-col items-center text-center">
     <lucide-layers class="text-4xl mb-2 text-[#42b883]" />
     <p class="font-bold text-[#2d8a63] tracking-wide uppercase text-sm mt-2">Virtual DOM</p>
-    <p class="text-sm text-gray-500 mt-1">Änderungen werden zuerst in einer In-Memory-Repräsentation berechnet (Diffing) – nur minimal nötige DOM-Operationen werden ausgeführt.</p>
+    <p class="text-sm text-gray-500 mt-1">Änderungen werden zuerst in einer In-Memory-Repräsentation berechnet (Diffing) → nur nötige DOM-Operationen werden ausgeführt.</p>
   </div>
   </v-click>
 
@@ -15,7 +15,7 @@ Was macht Vue im Hintergrund?
   <div class="flex flex-col items-center text-center">
     <lucide-activity class="text-4xl mb-2 text-[#42b883]" />
     <p class="font-bold text-[#2d8a63] tracking-wide uppercase text-sm mt-2">Reactivity System</p>
-    <p class="text-sm text-gray-500 mt-1"><code>ref()</code> und <code>reactive()</code> nutzen JS Proxies. Vue trackt automatisch Abhängigkeiten – nur betroffene Komponenten werden neu gerendert.</p>
+    <p class="text-sm text-gray-500 mt-1"><code>ref()</code> und <code>reactive()</code> nutzen JS Proxies. Vue trackt automatisch Abhängigkeiten.</p>
   </div>
   </v-click>
 
@@ -30,8 +30,7 @@ Was macht Vue im Hintergrund?
 </div>
 
 <!--
-Das Reactivity System basiert in Vue 3 auf ES Proxies – anders als in Vue 2 (Object.defineProperty).
-Das erlaubt reaktives Tracking für Arrays, Maps und dynamisch hinzugefügte Properties.
+TODO: Recherchieren: Was sind JS Proxies? Wie funktionieren sie?
 
 Dominik
 -->

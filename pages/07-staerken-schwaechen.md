@@ -1,7 +1,5 @@
 # Stärken & Schwächen
 
-<!-- TODO Reihenfolge anpassen-->
-
 <div class="grid grid-cols-2 gap-6 mt-4">
 
 <div>
@@ -81,10 +79,10 @@
 
   <v-click>
   <div class="flex items-start gap-3 px-3 py-2">
-    <lucide-briefcase class="text-red-400 mt-0.5 shrink-0 text-base" />
+    <lucide-landmark class="text-red-400 mt-0.5 shrink-0 text-base" />
     <div>
-      <div class="font-semibold text-sm text-gray-800">Geringere Marktdurchdringung</div>
-      <div class="text-xs text-gray-500">Weniger Stellenanzeigen · kleinerer Talent-Pool beim Hiring</div>
+      <div class="font-semibold text-sm text-gray-800">Kein Tech-Konzern-Backing</div>
+      <div class="text-xs text-gray-500">Community-Projekt ohne Google/Meta-Absicherung – geringere Akzeptanz in Enterprise-Branchen</div>
     </div>
   </div>
   </v-click>
@@ -101,10 +99,10 @@
 
   <v-click>
   <div class="flex items-start gap-3 px-3 py-2">
-    <lucide-landmark class="text-red-400 mt-0.5 shrink-0 text-base" />
+    <lucide-briefcase class="text-red-400 mt-0.5 shrink-0 text-base" />
     <div>
-      <div class="font-semibold text-sm text-gray-800">Kein Tech-Konzern-Backing</div>
-      <div class="text-xs text-gray-500">Community-Projekt ohne Google/Meta-Absicherung – geringere Akzeptanz in Enterprise-Branchen</div>
+      <div class="font-semibold text-sm text-gray-800">Geringere Marktdurchdringung</div>
+      <div class="text-xs text-gray-500">Weniger Stellenanzeigen · kleinerer Talent-Pool beim Hiring</div>
     </div>
   </div>
   </v-click>

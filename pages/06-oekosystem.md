@@ -1,5 +1,5 @@
 # Das Vue-Ökosystem
-<!-- TODO komischer abstand zwichen titel und text-->
+
 <div class="grid grid-cols-3 gap-6 mt-28">
 
   <v-click>
@@ -65,31 +65,31 @@ export const useCounterStore = defineStore('counter', () => {
 <div class="flex flex-col gap-4 mt-2">
 
 <v-click>
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 mt-10 mb-5">
   <lucide-database class="text-2xl text-[#42b883] shrink-0" />
   <div>
-    <p class="font-bold text-sm text-[#2d8a63]">Composition API</p>
-    <p class="text-xs text-gray-500">Stores als Setup-Funktionen – gleiche Syntax wie <code>setup()</code>, kein Boilerplate</p>
+    <div class="font-bold text-sm text-[#2d8a63] mb-0.75">Composition API</div>
+    <div class="text-xs text-gray-500">Stores als Setup-Funktionen – gleiche Syntax wie <code>setup()</code>, kein Boilerplate</div>
   </div>
 </div>
 </v-click>
 
 <v-click>
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 mb-5">
   <lucide-plug class="text-2xl text-[#42b883] shrink-0" />
   <div>
-    <p class="font-bold text-sm text-[#2d8a63]">Store verwenden</p>
-    <p class="text-xs text-gray-500"><code>const store = useCounterStore()</code> – reaktiv in jedem Component nutzbar</p>
+    <div class="font-bold text-sm text-[#2d8a63] mb-0.75">Store verwenden</div>
+    <div class="text-xs text-gray-500"><code>const store = useCounterStore()</code> – reaktiv in jedem Component nutzbar</div>
   </div>
 </div>
 </v-click>
 
 <v-click>
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 mb-5">
   <lucide-wrench class="text-2xl text-[#42b883] shrink-0" />
   <div>
-    <p class="font-bold text-sm text-[#2d8a63]">DevTools & Plugins</p>
-    <p class="text-xs text-gray-500">Eingebaut: Time-Travel-Debugging, Hot-Module-Replacement, erweiterbar per Plugin-API</p>
+    <div class="font-bold text-sm text-[#2d8a63] mb-0.75">DevTools & Plugins</div>
+    <div class="text-xs text-gray-500">Eingebaut: Time-Travel-Debugging, Hot-Module-Replacement, erweiterbar per Plugin-API</div>
   </div>
 </div>
 </v-click>
@@ -136,31 +136,31 @@ const routes = [
 <div class="flex flex-col gap-4 mt-2">
 
 <v-click>
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 mt-10 mb-5">
   <lucide-route class="text-2xl text-[#42b883] shrink-0" />
   <div>
-    <p class="font-bold text-sm text-[#2d8a63]">Dynamische Segmente</p>
-    <p class="text-xs text-gray-500"><code>:id</code> im Pfad – per <code>useRoute().params.id</code> abrufbar</p>
+    <div class="font-bold text-sm text-[#2d8a63] mb-0.75">Dynamische Segmente</div>
+    <div class="text-xs text-gray-500"><code>:id</code> im Pfad – per <code>useRoute().params.id</code> abrufbar</div>
   </div>
 </div>
 </v-click>
 
 <v-click>
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 mb-5">
   <lucide-shield class="text-2xl text-[#42b883] shrink-0" />
   <div>
-    <p class="font-bold text-sm text-[#2d8a63]">Navigation Guards</p>
-    <p class="text-xs text-gray-500"><code>beforeEach</code> – Auth-Checks vor jedem Routenwechsel</p>
+    <div class="font-bold text-sm text-[#2d8a63] mb-0.75">Navigation Guards</div>
+    <div class="text-xs text-gray-500"><code>beforeEach</code> – Auth-Checks vor jedem Routenwechsel</div>
   </div>
 </div>
 </v-click>
 
 <v-click>
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 mb-5">
   <lucide-package class="text-2xl text-[#42b883] shrink-0" />
   <div>
-    <p class="font-bold text-sm text-[#2d8a63]">Lazy Loading</p>
-    <p class="text-xs text-gray-500"><code>() => import('./Page.vue')</code> – Komponente wird erst bei Bedarf geladen</p>
+    <div class="font-bold text-sm text-[#2d8a63] mb-0.75">Lazy Loading</div>
+    <div class="text-xs text-gray-500"><code>() => import('./Page.vue')</code> – Komponente wird erst bei Bedarf geladen</div>
   </div>
 </div>
 </v-click>

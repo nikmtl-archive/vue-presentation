@@ -3,10 +3,9 @@ zoom: 0.85
 ---
 
 # Composables – das useXxx-Pattern
-<!-- TODO: Text anpassen -->
 <v-clicks>
 
-Composables kapseln und **teilen** reaktive Logik zwischen beliebig vielen Komponenten
+Composables **kapseln und teilen reaktive Logik** zwischen beliebig vielen Komponenten
 
 </v-clicks>
 
@@ -21,7 +20,8 @@ Composables kapseln und **teilen** reaktive Logik zwischen beliebig vielen Kompo
 
 <v-clicks>
 
-- Mixins (Vue 2) hatten Namenskonflikte und unklare Herkunft der Eigenschaften
+- Logik in Komponenten wird schnell unübersichtlich
+- Composables bieten klare, explizite APIs für geteilte Logik
 - Composables sind **explizit**: klar, woher jede Variable kommt
 - Konvention: Dateiname und Funktionsname beginnen mit `use`
 - native TypeScript Unterstützung
@@ -63,8 +63,7 @@ const { data, error, loading } = useFetch('/api/users')
 </div>
 
 <!--
-Composables folgen der React-Hooks-Logik konzeptuell, sind aber nicht an Rendering-Zyklen gebunden.
-Man kann Composables in anderen Composables nutzen – echte Komposierbarkeit.
+TODO: Tiefere Recherche was warum wie?
 
 Dominik
 -->
@@ -118,8 +117,5 @@ const {
 </div>
 
 <!--
-Das ist der Kern des Composable-Patterns: die gesamte Fetch-Logik ist in einer Funktion.
-Die Komponente ist schlank und deklarativ – dieselbe useFetch-Funktion läuft in beliebig vielen Komponenten.
-
 Dominik
 -->

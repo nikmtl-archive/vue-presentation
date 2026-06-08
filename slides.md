@@ -33,11 +33,12 @@ src: ./pages/02-components.md
 ---
 
 ---
-src: ./pages/03-kernarchitektur.md
+src: ./pages/04-direktiven.md
 ---
 
+
 ---
-src: ./pages/04-direktiven.md
+src: ./pages/03-kernarchitektur.md
 ---
 
 ---

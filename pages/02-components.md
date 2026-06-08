@@ -60,7 +60,6 @@ Kernkonzept von Vue
 
 <div v-after class="text-center mt-4">
   <span class="font-bold text-blue-500">Daten</span> bleiben stets <span class="font-bold">synchronisiert</span> mit der <span class="font-bold text-[#42b883]">UI</span> 
-  <p> Gleiche Eingaben erzeugen immer dieselbe Ausgabe → deklaratives Paradigma </p>
 </div>
 
 <!--
