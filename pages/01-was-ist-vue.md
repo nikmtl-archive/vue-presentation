@@ -17,7 +17,7 @@
   <div class="flex flex-col items-center text-center">
     <lucide-code-2 class="text-4xl mb-2 text-[#42b883]" />
     <p class="font-bold text-[#2d8a63] tracking-wide uppercase text-sm mt-2">Deklarativ</p>
-    <p class="text-sm text-gray-500 mt-1">TEXT VERBESSERN</p>
+    <p class="text-sm text-gray-500 mt-1">Beschreiben des gewünschten Zustands → <br /> Vue kümmert sich ums DOM</p>
   </div>
   </v-click>
 
@@ -25,7 +25,7 @@
   <div class="flex flex-col items-center text-center">
     <lucide-box class="text-4xl mb-2 text-[#42b883]" />
     <p class="font-bold text-[#2d8a63] tracking-wide uppercase text-sm mt-2">Komponentenbasiert</p>
-    <p class="text-sm text-gray-500 mt-1">TEXT VERBESSERN</p>
+    <p class="text-sm text-gray-500 mt-1">Wiederverwendbare, gekapselte Bausteine</p>
   </div>
   </v-click>
 </div>
