@@ -12,24 +12,68 @@ Composables **kapseln und teilen reaktive Logik** zwischen beliebig vielen Kompo
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
 
-<v-clicks>
+<v-click>
 
 **Warum Composables?**
 
-</v-clicks>
+</v-click>
 
-<v-clicks>
+<div class="flex flex-col gap-2 mt-2">
 
-- Logik in Komponenten wird schnell unübersichtlich
-- Composables bieten klare, explizite APIs für geteilte Logik
-- Composables sind **explizit**: klar, woher jede Variable kommt
-- Konvention: Dateiname und Funktionsname beginnen mit `use`
-- native TypeScript Unterstützung
+<v-click>
+<div class="flex items-start gap-3 px-3 py-2">
+  <lucide-git-branch class="text-[#42b883] mt-0.5 shrink-0 text-base" />
+  <div>
+    <div class="font-semibold text-sm text-gray-800">Logik auslagern</div>
+    <div class="text-xs text-gray-500">Logik in mehreren Komponenten wiederverwendbar</div>
+  </div>
+</div>
+</v-click>
 
-</v-clicks>
+<v-click>
+<div class="flex items-start gap-3 px-3 py-2">
+  <lucide-share-2 class="text-[#42b883] mt-0.5 shrink-0 text-base" />
+  <div>
+    <div class="font-semibold text-sm text-gray-800">Reaktiv</div>
+    <div class="text-xs text-gray-500">Composables haben vollen Zugriff auf alle reaktiven Features</div>
+  </div>
+</div>
+</v-click>
+
+<v-click>
+<div class="flex items-start gap-3 px-3 py-2">
+  <lucide-eye class="text-[#42b883] mt-0.5 shrink-0 text-base" />
+  <div>
+    <div class="font-semibold text-sm text-gray-800">Explizit & nachvollziehbar</div>
+    <div class="text-xs text-gray-500">Klar, woher jede Variable kommt</div>
+  </div>
+</div>
+</v-click>
+
+<v-click>
+<div class="flex items-start gap-3 px-3 py-2">
+  <lucide-file-code class="text-[#42b883] mt-0.5 shrink-0 text-base" />
+  <div>
+    <div class="font-semibold text-sm text-gray-800">Konvention: <code>use</code>-Prefix</div>
+    <div class="text-xs text-gray-500">Dateiname und Funktionsname beginnen mit <code>use</code></div>
+  </div>
+</div>
+</v-click>
+
+<v-click>
+<div class="flex items-start gap-3 px-3 py-2">
+  <lucide-shield-check class="text-[#42b883] mt-0.5 shrink-0 text-base" />
+  <div>
+    <div class="font-semibold text-sm text-gray-800">TypeScript-first</div>
+    <div class="text-xs text-gray-500">Native TypeScript Unterstützung</div>
+  </div>
+</div>
+</v-click>
 
 </div>
-<div v-click="1">
+
+</div>
+<div v-click="8">
 
 ```js 
 // composables/useFetch.js

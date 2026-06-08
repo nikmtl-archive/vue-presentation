@@ -30,7 +30,7 @@ Was macht Vue im Hintergrund?
 </div>
 
 <!--
-TODO: Recherchieren: Was sind JS Proxies? Wie funktionieren sie?
+Vue wrapped State in einen JavaScript Proxy – ein Objekt das jeden Lese- und Schreibzugriff abfängt.
 
 Dominik
 -->
@@ -83,6 +83,10 @@ const emit = defineEmits(['update:name'])
 </div>
 
 <!--
+
+Props nie direkt im Kind mutieren → State gehört dem Parent
+const { name } = props → Reaktivität verloren (stille Kopie)
+Stattdessen: props.name direkt nutzen oder toRefs(props)
 
 Dominik
 -->
